@@ -1,0 +1,96 @@
+.allocate-credit-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.allocate-credit-header {
+    text-align: center;
+}
+
+.allocate-credit-header h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: -20px;
+}
+
+.allocate-credit-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.allocate-credit-table thead {
+    background: #d9a6a6;
+}
+
+.allocate-credit-table th,
+.allocate-credit-table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+.allocate-credit-input-wrapper {
+    display: flex;
+    align-items: center;
+}
+.dollar-prefix {
+    margin-right: 4px;
+    font-weight: bold;
+}
+
+.allocate-credit-amount-input {
+    width: 80px;
+    text-align: right;
+}
+
+.allocate-credit-summary {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+.allocate-credit-summary-table {
+    min-width: 320px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    padding: 0.5rem 1.5rem 1rem 1.5rem;
+}
+.allocate-credit-summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 0;
+}
+.allocate-credit-summary-label {
+    font-weight: bold;
+    text-align: left;
+}
+.allocate-credit-summary-value {
+    text-align: right;
+    min-width: 100px;
+}
+.allocate-credit-summary-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 0.5rem 0 0.5rem 0;
+    width: 100%;
+}
+
+.allocate-credit-apply-btn {
+    background: #900;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.allocate-credit-apply-btn-disabled {
+    background: #ccc;
+    color: #888;
+    cursor: not-allowed;
+}
