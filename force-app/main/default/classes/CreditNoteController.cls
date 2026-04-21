@@ -4,7 +4,9 @@ public with sharing class CreditNoteController {
         return [
             SELECT Id, Name, CreatedDate, Total_Credit_Amount__c
             FROM Credit_Note__c
-            WHERE Invoice__c = :invoiceId
+            WHERE 
+                Invoice__c = :invoiceId AND
+                Status__c != 'Closed'
             ORDER BY CreatedDate ASC
         ];
     }
@@ -14,7 +16,9 @@ public with sharing class CreditNoteController {
         return [
             SELECT Id, Name, CreatedDate, Total_Credit_Amount__c
             FROM Credit_Note__c
-            WHERE Account__c = :accountId
+            WHERE 
+                Account__c = :accountId AND
+                Status__c != 'Closed'
             ORDER BY CreatedDate ASC
         ];
     }
